@@ -1,0 +1,40 @@
+{
+  "name": "ai-berkshire",
+  "displayName": "AI Berkshire",
+  "description": "价值投资研究 Skill 合集 — 巴菲特·芒格·段永平·李录四大师框架。Value-investing research skills powered by a four-master framework (Buffett, Munger, Duan Yongping, Li Lu).",
+  "author": {
+    "name": "shualoalumin"
+  },
+  "homepage": "https://github.com/shualoalumin/ai-berkshire",
+  "repository": "https://github.com/shualoalumin/ai-berkshire",
+  "license": "MIT",
+  "keywords": [
+    "value-investing",
+    "investment-research",
+    "equity-research",
+    "buffett",
+    "munger",
+    "finance",
+    "stock-analysis"
+  ],
+  "commands": [
+    "./skills/bottleneck-hunter.md",
+    "./skills/deep-company-series.md",
+    "./skills/dyp-ask.md",
+    "./skills/earnings-review.md",
+    "./skills/earnings-team.md",
+    "./skills/financial-data.md",
+    "./skills/industry-funnel.md",
+    "./skills/industry-research.md",
+    "./skills/investment-checklist.md",
+    "./skills/investment-research.md",
+    "./skills/investment-team.md",
+    "./skills/management-deep-dive.md",
+    "./skills/news-pulse.md",
+    "./skills/portfolio-review.md",
+    "./skills/private-company-research.md",
+    "./skills/quality-screen.md",
+    "./skills/thesis-tracker.md",
+    "./skills/wechat-article.md"
+  ]
+}

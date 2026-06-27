@@ -1,0 +1,14 @@
+{
+  "name": "ai-berkshire",
+  "owner": {
+    "name": "shualoalumin",
+    "url": "https://github.com/shualoalumin"
+  },
+  "plugins": [
+    {
+      "name": "ai-berkshire",
+      "source": "./",
+      "description": "价值投资研究 Skill 合集（巴菲特·芒格·段永平·李录四大师框架）。深度研究 / 财报精读 / 行业筛选 / 持仓管理 / 思维工具 共 18 个 Skill。"
+    }
+  ]
+}

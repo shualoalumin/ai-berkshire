@@ -223,15 +223,32 @@ npm install -g @anthropic-ai/claude-code
 
 ### 2. 安装 Skills
 
-将 `skills/` 目录下的 `.md` 文件复制到你的 Claude Code commands 目录：
+**方式一：作为 Claude Code 插件安装（推荐）**
+
+本仓库已打包为 Claude Code 插件市场（`.claude-plugin/`）。在 Claude Code 中执行：
+
+```bash
+# 添加插件市场
+/plugin marketplace add shualoalumin/ai-berkshire
+
+# 安装插件（18 个 Skill 一次到位）
+/plugin install ai-berkshire@ai-berkshire
+```
+
+安装后所有 Skill 以命名空间形式调用，如 `/ai-berkshire:investment-team`。
+推送新提交即自动更新（采用 commit-SHA 版本）。
+
+**方式二：手动复制（传统方式）**
 
 ```bash
 # 克隆仓库
-git clone https://github.com/xbtlin/ai-berkshire.git
+git clone https://github.com/shualoalumin/ai-berkshire.git
 
 # 复制 skills 到 Claude Code 全局 commands 目录
 cp ai-berkshire/skills/*.md ~/.claude/commands/
 ```
+
+> 维护者：修改 `skills/` 后运行 `python3 scripts/check.py` 校验插件清单一致性（准出门槛）。
 
 ### 3. 使用
 
