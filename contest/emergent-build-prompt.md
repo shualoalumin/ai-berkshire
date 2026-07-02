@@ -160,7 +160,27 @@ Act 3 — the track record chart vs indices with disclaimer.
 Act 4 — CTA "Convene the Committee". Keep copy punchy, no filler words.
 ```
 
-## ITERATION PROMPT 4 — 마감 전 폴리시
+## ITERATION PROMPT 4 — 임팩트(Transformation) 페이지 ★심사 핵심★
+
+> 심사 기준이 "가장 의미 있는 transformation을 보여준 팀"이므로, 앱 안에
+> 비포/애프터 증거 페이지를 만들어 심사위원이 앱 안에서 바로 보게 한다.
+
+```
+Add an "IMPACT" page (linked in the header as "What Changed"):
+1. A before/after split layout: LEFT "Before: one analyst, 2–3 days per
+   company, paper checklists, drifting formats" vs RIGHT "After: one committee
+   session, enforced anti-bias checks, identical rubric across 29 companies".
+   (Numbers will be provided; use placeholders I can edit.)
+2. A usage log section: a simple table of real committee sessions run in this
+   business (date, company, verdict, time taken) — editable content, seeded
+   with placeholder rows.
+3. The two-year real-money track record chart of the underlying methodology
+   (2024 +69.29%, 2025 +66.38% vs major indices) with the standard disclaimer.
+4. A pull quote: "This app is not a demo. It is how this research operation
+   runs now."
+```
+
+## ITERATION PROMPT 5 — 마감 전 폴리시
 
 ```
 Final polish pass: fix responsive breakpoints, add loading/empty states for
@@ -173,6 +193,8 @@ favicon, and make sure the app works fully with seed data alone when offline.
 
 ## 제출 직전 체크리스트
 
+- [ ] **앱을 실제 리서치에 투입했는가** — 실제 후보 기업 1~2곳을 앱으로 위원회 분석하고 날짜·소요시간·평결을 기록 (심사 기준 = "데모가 아니라 실사용 + 무엇이 바뀌었나")
+- [ ] IMPACT 페이지의 비포/애프터 수치와 사용 로그를 **실제 값**으로 교체했는가 (과장 금지)
 - [ ] 시드 9개사 모두 Committee Room이 데이터 공백 없이 렌더링되는가
 - [ ] PDD 화면에서 CONFLICT 배너(버핏 4.4 vs 리루 2.0)가 첫눈에 보이는가
 - [ ] 면책조항이 모든 페이지에 있는가 (금융 앱 심사 시 필수 방어선)

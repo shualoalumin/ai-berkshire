@@ -1,8 +1,17 @@
 # Contest Submission Package — "AI Berkshire: The AI Investment Committee"
 
+> **심사 루브릭 (Raj Shamani편 원문에서 확인, Fabrizio편도 동일 구조로 추정):**
+> 1. 자기 비즈니스의 **실제 문제**를 특정하고
+> 2. Emergent로 소프트웨어를 빌드하고
+> 3. **데모가 아니라 실제 운영에 투입**하고 ("This isn't about building a demo")
+> 4. **무엇이 바뀌었는지 제출** — "가장 의미 있는 transformation을 보여준 상위 3팀"이 수상
+>
+> 즉 이건 앱 완성도 대회가 아니라 **비포/애프터 증명 대회**입니다. 아래 제출문은 이 4단계 구조에 정확히 맞춰져 있습니다.
+>
 > 사용법: 아래 영어 텍스트를 Emergent 제출 폼/쇼케이스 설명란에 붙여넣기.
-> 데모 영상을 찍는다면 "60-Second Demo Script" 순서대로.
-> 제출 전 페이지에서 확인할 것: 정확한 마감 시각, 제출 필드(설명 글자수 제한 여부), 데모 영상 요구 여부.
+> `[FILL]` 표시는 **실제 수치로 교체 필수** — 과장 금지, 추정치는 "~" 표기.
+> 제출 전 페이지에서 확인할 것: 정확한 마감 시각, 참가 자격(Fabrizio편이 글로벌 오픈인지), 제출 필드, 데모 영상 요구 여부.
+> **제출 전 반드시: 빌드한 앱을 실제 리서치 워크플로에 최소 며칠 투입하고, 실제 분석 1~2건을 앱으로 수행한 기록을 남길 것.** (아래 3단계 참조)
 
 ---
 
@@ -14,15 +23,23 @@
 
 Four legendary value investors. One committee. A forced verdict — because "on one hand, on the other hand" never made anyone a decision.
 
-## The Real-World Problem
+## My Business (Step 0 — who is entering)
 
-Ask any chatbot "should I buy this stock?" and you get the same useless answer: a balanced essay that ends with "please do your own research." It *looks* right and *decides* nothing. Millions of retail investors are drowning in AI-generated analysis that refuses to conclude.
+I run **AI Berkshire**, a one-person investment research operation: 180+ published research reports covering 29 companies in depth, a public research repository, a paid-attention readership via WeChat articles, and a real-money portfolio managed on this research (2024: +69.29%, 2025: +66.38%, verified brokerage statements).
+
+One person doing the work of a research team is the business — and it had a real bottleneck.
+
+## Step 1 — The Real Problem in My Business
+
+A rigorous multi-perspective company analysis — business model, financials, industry, risk, each argued separately and then forced to a verdict — used to cost me **[FILL: e.g. 2–3 days] per company** of manual orchestration: running each analytical lens separately, reconciling conflicts by hand, rebuilding the same verdict tables every time, and fighting my own confirmation bias with paper checklists.
+
+The deeper problem: generic AI assistance makes this *worse*, not better. Ask a chatbot "should I buy this stock?" and you get a balanced essay that ends with "please do your own research." It *looks* right and *decides* nothing. My readers face the same problem at larger scale.
 
 Real investment committees don't work that way. They argue. Four people with different lenses see different truths, clash openly — and then they are **forced to vote**.
 
-## The Solution
+## Step 2 — What I Built on Emergent
 
-AI Berkshire convenes a virtual investment committee of four legendary investors, each with a strictly separated mandate:
+AI Berkshire (the app) convenes a virtual investment committee of four legendary investors, each with a strictly separated mandate:
 
 - **Warren Buffett** — financials & valuation: "What is it worth, and what's the margin of safety?"
 - **Charlie Munger** — industry & inversion: "Invert: how does this company die?"
@@ -39,14 +56,29 @@ Built-in anti-self-deception machinery — the part generic AI analysis is missi
 - **Information Richness Grade (A/B/C)** — because more data ≠ more certainty.
 - **No LLM mental math** — every displayed figure was computed with decimal-precision tooling and cross-validated from 2+ sources.
 
-## The Impact (why this isn't a toy)
+## Step 3 — Used in Real Operations (not a demo)
 
-This is not a hypothetical framework. The methodology behind the app has been run with real money for two years:
+The app is now the front end of my actual research workflow:
+
+- **[FILL]** live committee sessions run on real candidate companies since building it (name the companies and dates — e.g. "used it to re-underwrite [company] on [date] ahead of earnings")
+- 9 companies from my existing coverage universe (Tencent, PDD, Pop Mart, Meta, Uber, Mastercard, Adobe, Novo Nordisk, Lululemon) migrated into the committee format as the working knowledge base I consult before any position change
+- **[FILL if true]** shared with my readers / used to produce a published article
+
+## Step 4 — What Changed (the transformation)
+
+| Before (manual orchestration) | After (committee app on Emergent) |
+|---|---|
+| [FILL: e.g. 2–3 days] per full four-lens company analysis | [FILL: e.g. under 1 hour] per live committee session |
+| Verdict format drifted between reports; hard to compare companies | Identical rubric, verdict, and tiered price-band table across all 29 covered companies |
+| Anti-bias checks (mirror test, red lines, inversion) lived on paper and were skippable | Enforced in the product — a verdict cannot render without them |
+| Research conclusions locked in long-form documents readers rarely finish | A committee room a reader can replay in 60 seconds |
+
+The methodology this app operationalizes is not hypothetical — it has run real money for two years:
 
 - **2024: +69.29%** (vs S&P 500 +23.31%, Hang Seng +17.67%)
 - **2025: +66.38%** (vs S&P 500 +16.39%, Hang Seng +27.77%)
 
-Two consecutive years beating every major global index by 39–52 percentage points, verified with real brokerage account statements. The app ships with 9 fully pre-analyzed global companies (Tencent, PDD, Pop Mart, Meta, Uber, Mastercard, Adobe, Novo Nordisk, Lululemon) distilled from 180+ real research reports, plus a live mode that convenes the committee on any company you type.
+Two consecutive years beating every major global index by 39–52 percentage points, verified with real brokerage statements. The app is how that operation now runs day to day.
 
 *Disclaimer shown throughout the app: past performance does not guarantee future results; educational research tool, not investment advice.*
 
@@ -93,3 +125,6 @@ Self-directed retail investors, investing clubs, finance educators teaching deci
 
 **Q. What makes it different?**
 (1) Adversarial multi-persona design — the disagreement is the product; (2) forced verdicts with position sizing; (3) built-in anti-self-deception toolkit; (4) a real, two-year, index-beating track record behind the methodology — with disclaimers, not hype.
+
+**Q. What changed in your business after building it?**
+Full four-lens company analysis went from [FILL: days] of manual orchestration to [FILL: a single session]; verdict format is now identical across all 29 covered companies; the anti-bias checklist went from skippable paper to enforced product logic; and my published research now ships with a replayable committee room instead of a 40-page document.
