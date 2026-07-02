@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "product": "AI Berkshire — The AI Investment Committee",
+    "description": "Pre-analyzed companies extracted from real AI Berkshire research reports (four-master committee framework). All figures were cross-validated from 2+ sources and computed with decimal-precision tooling at research time.",
+    "asOf": "2026-06",
+    "disclaimer": "Educational research tool. Past performance does not guarantee future results. Not investment advice.",
+    "masters": {
+      "duan": { "name": "Duan Yongping", "role": "Business Model", "question": "Is this a good business?" },
+      "buffett": { "name": "Warren Buffett", "role": "Financials & Valuation", "question": "What is it worth, and is there a margin of safety?" },
+      "munger": { "name": "Charlie Munger", "role": "Industry & Inversion", "question": "Invert: how does this company die?" },
+      "lilu": { "name": "Li Lu", "role": "Risk & Management", "question": "Is there 10-year certainty? (holds veto power)" }
+    },
+    "verdictLevels": ["PASS", "GRAY_ZONE", "REJECT"]
+  },
+  "companies": [
+    {
+      "id": "tencent",
+      "name": "Tencent Holdings",
+      "ticker": "0700.HK",
+      "sector": "Internet / Social & Gaming",
+      "infoGrade": "A",
+      "overallScore": 4.1,
+      "verdict": "PASS",
+      "verdictLine": "A classic case of buying an excellent company at a fair price: WeChat's 1.4B-MAU social moat is nearly unassailable, gross margin rose from 42% to 56% in 4 years, and buybacks are the largest in Hong Kong market history.",
+      "masters": {
+        "duan": { "score": 4.5, "thesis": "The social network effect is irreplaceable — gaming plus advertising is a twin engine. I hold it heavily myself and call it a non-sellable asset." },
+        "buffett": { "score": 4.1, "thesis": "56% gross margin, 182.6B RMB free cash flow, HK$112B of buybacks. PE 16x is cheap-ish but not screaming cheap." },
+        "munger": { "score": 4.0, "thesis": "The social moat can't be stormed head-on, but ByteDance is laying siege around the walls — Video Accounts are the biggest growth lever left." },
+        "lilu": { "score": 3.8, "thesis": "Top-tier management, but no visible successor, and being behind ByteDance in consumer AI is the real worry." }
+      },
+      "conflict": { "bull": "duan", "bear": "lilu", "line": "Duan calls it a 'non-sellable' forever asset; Li Lu warns the AI application gap versus ByteDance is 5.5x and could demote it from growth stock to value stock." },
+      "debate": [
+        { "speaker": "duan", "text": "Fourteen hundred million people open WeChat every day. Alibaba tried to copy it. ByteDance tried. Both failed. That is the whole thesis." },
+        { "speaker": "munger", "text": "Nobody storms the castle, agreed. But ByteDance isn't storming it — it's rerouting the ad budgets around it. Siege warfare works too." },
+        { "speaker": "buffett", "text": "While you two argue, the company bought back HK$112 billion of its own stock. At 16 times earnings I don't need heroic assumptions." },
+        { "speaker": "lilu", "text": "One caution: their consumer AI assistant trails ByteDance's by 5.5x in usage. If AI redefines the super-app, today's moat maps may be obsolete. I still pass it — with monitoring." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Build 10–15% position now", "priceBand": "Buy HK$480–520, target HK$650+", "logic": "PE 16x + Video Accounts upside + buyback support" },
+        { "profile": "Moderate", "action": "Accumulate in tranches", "priceBand": "Buy HK$450–500, target HK$600", "logic": "Wait for quarterly proof of Video Accounts monetization" },
+        { "profile": "Conservative", "action": "Small holding", "priceBand": "Add below HK$420", "logic": "Wait for PE under 14x before sizing up" }
+      ],
+      "inversion": [
+        "AI-native super-app displaces WeChat as the OS of Chinese daily life (low probability, high impact)",
+        "Regulatory re-tightening on gaming or platform economics",
+        "Succession vacuum after the current leadership generation"
+      ],
+      "mirrorTest": "Deepest moat in Chinese internet; margins expanding; management returns cash aggressively; price is fair, not euphoric; biggest risk is losing the AI application race.",
+      "sourceReport": "reports/腾讯/最终报告-20260411.md"
+    },
+    {
+      "id": "pdd",
+      "name": "PDD Holdings (Pinduoduo / Temu)",
+      "ticker": "PDD",
+      "sector": "E-commerce",
+      "infoGrade": "B",
+      "overallScore": 3.4,
+      "verdict": "GRAY_ZONE",
+      "verdictLine": "A hyper-efficient cash printing machine (ROE 31%, $59.5B net cash, ex-cash PE ~6.3x) — but the moat is narrower than it looks, Temu faces structural tariff walls, and management returns zero cash. Cheap, but not 'great'. Mid-size position at most.",
+      "masters": {
+        "duan": { "score": 3.7, "thesis": "Efficiency-driven, not brand-driven. Scale is the only real moat here; 'cheap' is a brand discount, not a brand premium." },
+        "buffett": { "score": 4.4, "thesis": "Textbook balance sheet, free cash flow with near-zero capex, and an ex-cash PE of 6.3x. This is a cash machine priced for decline." },
+        "munger": { "score": 3.5, "thesis": "Four-way knife fight. Douyin built 4 trillion GMV in three years — the moat is shallower than everyone thinks. Tariffs are the wild card." },
+        "lilu": { "score": 2.0, "thesis": "Management culture is a hidden liability, global regulatory risk is extreme, zero buybacks, zero dividends. I cannot see 10-year certainty. Veto on heavy positions." }
+      },
+      "conflict": { "bull": "buffett", "bear": "lilu", "line": "Buffett: 'a cash machine at 6.3x ex-cash earnings — genuinely cheap.' Li Lu: 'no 10-year certainty and disappointing capital allocation — cheapness doesn't cure that.' This is the widest split in the entire coverage universe." },
+      "debate": [
+        { "speaker": "buffett", "text": "Strip out the cash and you're paying about six times earnings for a business earning 31% on equity. I've bought far worse for far more." },
+        { "speaker": "lilu", "text": "And what do the owners get? No dividend. No buyback. $59 billion sits there while the controlling culture treats minority shareholders as spectators. Price is not the problem — certainty is." },
+        { "speaker": "munger", "text": "Invert it: Douyin went from zero to 4 trillion GMV in three years. If the moat were real, that shouldn't have been possible." },
+        { "speaker": "duan", "text": "It is a good operation, not yet a good business. When 'cheapest' is your promise, the customer's loyalty lasts exactly until someone is cheaper." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Accumulate in tranches now, 10–15%", "priceBand": "Buy $95–105, add below $80", "logic": "Ex-cash PE 6.3x, historic-low valuation" },
+        { "profile": "Moderate", "action": "Wait for tariff clarity, 5–10%", "priceBand": "Buy $85–95, size up below $80", "logic": "Temu tariff overhang is the key structural variable" },
+        { "profile": "Conservative", "action": "Watch only, 0–5%", "priceBand": "Consider below $75 or after an HK listing", "logic": "Fails the 10-year certainty test; wait for Temu profitability proof" }
+      ],
+      "inversion": [
+        "Global tariff walls permanently cap Temu's economics",
+        "Douyin/JD price war compresses take rates at home",
+        "Governance discount becomes permanent — cash never reaches shareholders"
+      ],
+      "mirrorTest": "Extraordinary efficiency and cash generation at a single-digit ex-cash multiple; but narrow moat, tariff exposure, and shareholder-unfriendly capital allocation mean it can be a position, never a conviction holding.",
+      "sourceReport": "reports/拼多多/最终报告.md"
+    },
+    {
+      "id": "popmart",
+      "name": "Pop Mart International",
+      "ticker": "9992.HK",
+      "sector": "Consumer / IP Collectibles",
+      "infoGrade": "B",
+      "overallScore": 3.8,
+      "verdict": "GRAY_ZONE",
+      "verdictLine": "A money-printing consumer platform (72% gross margin, 55% ROE, zero debt) run by a 5-star founder at PE 13x — but the core question 'can story-less IP stay evergreen?' has no certain answer. LABUBU is 38% of revenue. Small position, watch closely.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": "The 'record label for IP' model is excellent, but IP concentration is too high — story-less IP is naturally short-lived." },
+        "buffett": { "score": 4.0, "thesis": "72% gross margin, 35% net margin, 55% ROE at 13x earnings. The +259% inventory build is the one yellow light on a beautiful statement." },
+        "munger": { "score": 3.0, "thesis": "Remember Funko. Remember Beanie Babies. In all of history, exactly one story-less IP stayed evergreen: Hello Kitty. Base rates matter more than vibes." },
+        "lilu": { "score": 4.0, "thesis": "Wang Ning is a top-tier founder — five consecutive correct contrarian calls, and deliberately slowing growth is wisdom. Still, I put evergreen probability at only 30–40%." }
+      },
+      "conflict": { "bull": "buffett", "bear": "munger", "line": "Buffett sees a debt-free machine at 13x earnings; Munger sees Funko and Beanie Babies in the rear-view mirror and asks why this time is different." },
+      "debate": [
+        { "speaker": "buffett", "text": "You rarely get 55% returns on equity with no leverage at 13 times earnings. The financials are not the debate." },
+        { "speaker": "munger", "text": "Correct — the debate is mortality. Toy fads die young. One exception in history, Hello Kitty. Betting on the second exception needs humility." },
+        { "speaker": "lilu", "text": "The founder is the hedge. Wang Ning owns 48.7%, made five contrarian calls in a row correctly, and is deliberately slowing the LABUBU frenzy. That is rare discipline." },
+        { "speaker": "duan", "text": "Good business today. Whether it is a good business in ten years depends on de-LABUBU-ing successfully. Size the position to that uncertainty." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Small-to-mid position", "priceBand": "Accumulate on weakness", "logic": "Founder quality + financials justify participation" },
+        { "profile": "Moderate", "action": "Small position, observe", "priceBand": "Add only if non-LABUBU IP revenue share rises", "logic": "Committee's central case: buy-and-watch, not conviction" },
+        { "profile": "Conservative", "action": "Watchlist only", "priceBand": "—", "logic": "30–40% evergreen probability is below the certainty bar" }
+      ],
+      "inversion": [
+        "LABUBU cools and no successor IP emerges (the Funko path)",
+        "Inventory build (+259%) turns into markdown pressure",
+        "Fad-driven overseas expansion overshoots then retrenches"
+      ],
+      "mirrorTest": "Exceptional founder, exceptional unit economics, one concentrated fragile asset: the IP itself. Until the portfolio de-concentrates, this is a position sized for being wrong.",
+      "sourceReport": "reports/泡泡玛特/最终报告-长青研究.md"
+    },
+    {
+      "id": "meta",
+      "name": "Meta Platforms",
+      "ticker": "META",
+      "sector": "Internet / Advertising & AI",
+      "infoGrade": "A",
+      "overallScore": 4.2,
+      "verdict": "PASS",
+      "verdictLine": "Core business is superb and the competitive position is proven; the only major variable is whether the enormous AI capex earns its keep. Buy on pullbacks, cap at 5–8% of portfolio.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": "The core business is excellent; the return on massive capex still has to be proven, year after year." },
+        "buffett": { "score": 4.0, "thesis": "Top-shelf financials at a modest valuation. Capex is the single big swing factor in owner earnings." },
+        "munger": { "score": 5.0, "thesis": "The competitive landscape is extremely favorable and the moat is deep and already validated." },
+        "lilu": { "score": 4.0, "thesis": "Outstanding but aggressive management — capital allocation needs continuous monitoring, not blind trust." }
+      },
+      "conflict": { "bull": "munger", "bear": "duan", "line": "Munger rates the moat a rare 5 stars; Duan withholds the fifth star until the AI capex proves it can compound owner value rather than consume it." },
+      "debate": [
+        { "speaker": "munger", "text": "Three billion daily users and the ad machine keeps compounding. The competition mostly shot itself." },
+        { "speaker": "duan", "text": "A great business, yes. But tens of billions a year into AI infrastructure is a promise, not yet a return." },
+        { "speaker": "buffett", "text": "As long as the core printer funds the bets and the multiple stays modest, I can live with ambition." },
+        { "speaker": "lilu", "text": "Founder control cuts both ways. Watch the capex-to-return cycle every quarter; conviction here must be earned annually." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Build on any pullback", "priceBand": "Accumulate on dips", "logic": "Moat validated, AI optionality free-ish at current multiple" },
+        { "profile": "Moderate", "action": "Position 5–8% max", "priceBand": "Stagger entries", "logic": "Capex uncertainty argues for a cap on sizing" },
+        { "profile": "Conservative", "action": "Half position, add on capex ROI proof", "priceBand": "—", "logic": "Wait for evidence AI spend converts to earnings" }
+      ],
+      "inversion": [
+        "AI capex cycle peaks with returns below cost of capital",
+        "Regulatory action against ad targeting economics",
+        "Attention shift to a platform Meta cannot buy or copy"
+      ],
+      "mirrorTest": "Validated moat, elite financials, one honest uncertainty — whether the AI build-out is an investment or a tax. Size accordingly.",
+      "sourceReport": "reports/Meta/最终报告.md"
+    },
+    {
+      "id": "uber",
+      "name": "Uber Technologies",
+      "ticker": "UBER",
+      "sector": "Platform / Mobility & Delivery",
+      "infoGrade": "A",
+      "overallScore": 3.9,
+      "verdict": "GRAY_ZONE",
+      "verdictLine": "A two-sided network with 76% ride-share dominance, $9.8B FCF growing 18%, at 13x PE — clearly cheap for the growth, but autonomous-vehicle uncertainty is exactly why. Watchlist; buy dips at 3–5% sizing.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": "Two-sided network with cross-business leverage and an asset-light model; delivery is the weaker leg." },
+        "buffett": { "score": 4.0, "thesis": "$9.8B of free cash flow, 18% growth, improving margins, 13x earnings. The market is charging a fear discount." },
+        "munger": { "score": 4.0, "thesis": "76% share in mobility and an underrated membership moat in Uber One. Dominance is real." },
+        "lilu": { "score": 3.5, "thesis": "Dara executed a remarkable turnaround with real capital discipline, but the autonomous-vehicle bet is a large unproven outlay." }
+      },
+      "conflict": { "bull": "buffett", "bear": "lilu", "line": "Buffett says 13x for an 18%-growth platform is plainly mispriced; Li Lu answers that the AV transition is precisely the kind of decade-scale uncertainty that justifies the discount." },
+      "debate": [
+        { "speaker": "buffett", "text": "Thirteen times earnings for a dominant network growing free cash flow at eighteen percent. Somebody in this market is wrong." },
+        { "speaker": "lilu", "text": "The discount has a name: autonomy. If robotaxis commoditize the supply side, today's driver network is a stranded asset." },
+        { "speaker": "munger", "text": "Or the aggregator wins either way — Uber doesn't need to own the robots, just the demand. That's the underrated scenario." },
+        { "speaker": "duan", "text": "Platform is good, mobility is great, delivery is ordinary. Buy the whole only when the price pays you for the weakest part." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Start position on dips", "priceBand": "Accumulate on pullbacks", "logic": "Valuation discount vs growth is unusually wide" },
+        { "profile": "Moderate", "action": "3–5% position, staged", "priceBand": "Stagger entries", "logic": "Committee central case: watchlist-to-position on weakness" },
+        { "profile": "Conservative", "action": "Watchlist", "priceBand": "—", "logic": "Wait for clarity on the AV partnership economics" }
+      ],
+      "inversion": [
+        "Robotaxi players vertically integrate demand and bypass the aggregator",
+        "Regulatory reclassification of drivers compresses margins",
+        "Delivery price war resumes and burns the cash engine"
+      ],
+      "mirrorTest": "Dominant network, real cash flow, cheap multiple, one existential question mark (autonomy). A position you rent with discipline, not marry.",
+      "sourceReport": "reports/Uber/最终报告.md"
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard",
+      "ticker": "MA",
+      "sector": "Payments Network",
+      "infoGrade": "A",
+      "overallScore": 4.0,
+      "verdict": "GRAY_ZONE",
+      "verdictLine": "A toll road on global commerce: 45.7% net margin, 43% ROIC, five stacked moats. The business is 5 stars; the 29x price is 3 stars. Top-tier company at a full price — wait for your pitch.",
+      "masters": {
+        "duan": { "score": 5.0, "thesis": "An asset-light duopoly collecting tolls with near-zero marginal cost. This is what a perfect business model looks like." },
+        "buffett": { "score": 5.0, "thesis": "45.7% net margin, 43% ROIC, 109% FCF conversion — a genuine money machine. The statement almost audits itself." },
+        "munger": { "score": 5.0, "thesis": "Network effects, switching costs, regulatory barriers, data assets, brand trust — five moats stacked. Disruption stories keep dying at its gates." },
+        "lilu": { "score": 4.0, "thesis": "Management is embracing stablecoins and agentic commerce rather than hiding from them — the right posture. Price, not risk, is the constraint." }
+      },
+      "conflict": { "bull": "duan", "bear": "buffett", "line": "Everyone loves the business; the argument is the ticket price. 29x earnings needs 15%+ growth to keep working — and it trades at a 13% premium to Visa." },
+      "debate": [
+        { "speaker": "duan", "text": "If I could own only one business model on earth, a payments toll road is on the shortlist." },
+        { "speaker": "buffett", "text": "So would I — at a price. Twenty-nine times earnings prices in years of flawless execution. Wonderful company, full ticket." },
+        { "speaker": "munger", "text": "The stablecoin obituary for card networks has been written five times. Each time the networks absorbed the disruptor. I expect a sixth." },
+        { "speaker": "lilu", "text": "No red lines anywhere. My only note: patience is a position too. Full-price quality rewards those who wait for the wobble." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Small starter, add on any derating", "priceBand": "Add on multiple compression", "logic": "Quality this high rarely gets cheap; average in slowly" },
+        { "profile": "Moderate", "action": "Wait for a better price", "priceBand": "Below ~25x earnings", "logic": "The business earns 5 stars, the price earns 3" },
+        { "profile": "Conservative", "action": "Watchlist", "priceBand": "Material pullback only", "logic": "Do not pay a premium to Visa without a reason" }
+      ],
+      "inversion": [
+        "Regulated interchange caps spread globally",
+        "Stablecoin rails finally bypass the four-party model at scale",
+        "Growth decelerates below the 15% the multiple demands"
+      ],
+      "mirrorTest": "One of the world's best businesses at a price that already says so. The risk isn't the company; it's the entry point.",
+      "sourceReport": "reports/Mastercard/最终报告.md"
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "ticker": "ADBE",
+      "sector": "Software / Creative Tools",
+      "infoGrade": "A",
+      "overallScore": 4.0,
+      "verdict": "PASS",
+      "verdictLine": "One of the best business models in creative software at its cheapest valuation in a decade (19x PE, 10x FCF). The discount exists for two nameable reasons — CEO transition and AI disruption anxiety — and the committee judges both survivable. Buy in tranches, 3–5%.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": "Subscriptions plus switching costs plus industry-standard status — though the edges of the franchise are being nibbled." },
+        "buffett": { "score": 5.0, "thesis": "29.5% net margin, 42% FCF margin, $10B+ of cash flow, at the lowest multiple in ten years. Fear is doing the discounting for us." },
+        "munger": { "score": 4.0, "thesis": "The core moat is wide; the AI-disruption thesis is real enough to monitor but so far eats the edges, not the core." },
+        "lilu": { "score": 3.0, "thesis": "Narayen was excellent and is leaving; an undefined succession is the largest short-term risk on the sheet." }
+      },
+      "conflict": { "bull": "buffett", "bear": "lilu", "line": "Buffett sees a decade-low price on a fortress cash machine; Li Lu reminds the room that fortress plus leadership vacuum has burned value investors before." },
+      "debate": [
+        { "speaker": "buffett", "text": "Ten times free cash flow for the industry standard in creative work. The last time it was this cheap was a different decade." },
+        { "speaker": "lilu", "text": "Cheap for reasons: the architect of the subscription pivot is walking out the door, and nobody knows who inherits the AI war." },
+        { "speaker": "munger", "text": "Invert: if generative AI truly killed Photoshop, you'd see it in churn first. You don't — you see it in headlines." },
+        { "speaker": "duan", "text": "Professionals don't switch tools that their whole workflow, and their whole industry, standardizes on. Not quickly. Buy slowly, watch churn." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Buy in tranches now", "priceBand": "Accumulate at current levels", "logic": "Decade-low valuation with intact core moat" },
+        { "profile": "Moderate", "action": "3–5% position, staged", "priceBand": "Stagger over quarters", "logic": "CEO transition argues against a lump-sum entry" },
+        { "profile": "Conservative", "action": "Half position until successor named", "priceBand": "—", "logic": "Leadership clarity is the cheap catalyst to wait for" }
+      ],
+      "inversion": [
+        "AI-native tools convert the next generation of creators before Adobe converts its base to Firefly",
+        "A weak external CEO hire triggers strategy churn",
+        "Enterprise seat growth quietly turns negative"
+      ],
+      "mirrorTest": "Fortress economics, decade-low price, two nameable fears (succession, AI) — both watchable with clear tripwires. That's what a value setup looks like.",
+      "sourceReport": "reports/Adobe/最终报告.md"
+    },
+    {
+      "id": "novo",
+      "name": "Novo Nordisk",
+      "ticker": "NVO",
+      "sector": "Pharma / GLP-1",
+      "infoGrade": "A",
+      "overallScore": 3.5,
+      "verdict": "GRAY_ZONE",
+      "verdictLine": "A quality asset in its difficult season: 33% net margin and 21% ROIC at a 10x PE that assumes the growth engine died permanently — contradicted by oral Wegovy's momentum. But Eli Lilly's product edge is real. Tracking position 2–3%; size up only on CagriSema approval.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": "GLP-1 is a superb franchise with subscription-like chronic dosing — but the company is becoming one of two, no longer the only one." },
+        "buffett": { "score": 4.0, "thesis": "33% net margins, 21% ROIC, and a 10x PE at a historic extreme. The market is pricing a permanent stall; the pipeline disagrees." },
+        "munger": { "score": 3.0, "thesis": "Lilly's product is currently stronger and holds ~60% US share. But invert the pessimism: the market is big enough for two fat duopolists." },
+        "lilu": { "score": 3.0, "thesis": "New CEO pointing the right direction, execution still early. CagriSema's FDA decision is the swing variable — that's a coin you don't have to flip with a big position." }
+      },
+      "conflict": { "bull": "buffett", "bear": "munger", "line": "Buffett argues 10x earnings already assumes catastrophe; Munger counters that losing the product war to Lilly is not a catastrophe scenario — it's the current scoreboard." },
+      "debate": [
+        { "speaker": "buffett", "text": "Ten times earnings for a duopolist in the biggest drug category of the era. Pessimism is on sale." },
+        { "speaker": "munger", "text": "Deserved pessimism, partly. Lilly's molecule wins head-to-head and owns 60% of the US market. Cheapness against a stronger rival is a value trap's favorite costume." },
+        { "speaker": "lilu", "text": "So let the pipeline referee it. CagriSema approval and a return-to-growth guidance are the tripwires. Until then, 2–3% is participation, not conviction." },
+        { "speaker": "duan", "text": "Chronic-disease franchises are as close to subscriptions as medicine gets. Second place in a duopoly this size is still a good business — just not at any size of bet." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Tracking position 2–3%", "priceBand": "Current levels", "logic": "Historic-low multiple with pipeline optionality" },
+        { "profile": "Moderate", "action": "Wait for CagriSema FDA decision", "priceBand": "Add on approval", "logic": "The single most-loaded catalyst (2026 Q4)" },
+        { "profile": "Conservative", "action": "Watchlist", "priceBand": "—", "logic": "Add only after growth guidance turns positive again" }
+      ],
+      "inversion": [
+        "CagriSema misses or disappoints and the pipeline story deflates",
+        "GLP-1 category-level safety issue emerges",
+        "Two consecutive years of revenue decline confirm the bear case"
+      ],
+      "mirrorTest": "Second-best player in a giant duopoly at a crisis multiple, with named catalysts and named tripwires. A defined-risk bet, not a leap of faith.",
+      "sourceReport": "reports/Novo Nordisk/最终报告.md"
+    },
+    {
+      "id": "lululemon",
+      "name": "Lululemon Athletica",
+      "ticker": "LULU",
+      "sector": "Consumer / Apparel",
+      "infoGrade": "A",
+      "overallScore": 3.7,
+      "verdict": "PASS",
+      "verdictLine": "Good business + capable-enough management + an excellent price: PE 9x, 78% below its 10-year average, after a 77% drawdown. 89–92% repurchase rates say the brand is alive. The stock fell like a fad; the customer data says it isn't one. Staged buy.",
+      "masters": {
+        "duan": { "score": 4.0, "thesis": ">90% direct-to-consumer, 58% gross margin, 30% ROIC, 89–92% repurchase rates. The premium athleisure ceiling is still high." },
+        "buffett": { "score": 5.0, "thesis": "PE 9 versus a 10-year average of 41. From $511 to $119 — the market has pre-paid for a decade of bad news." },
+        "munger": { "score": 3.0, "thesis": "Brand plus community is a middling moat with no patents; Alo and Vuori are genuinely eating the younger cohort." },
+        "lilu": { "score": 3.0, "thesis": "A CEO handover is the single largest risk event a brand company can have. Wait for the new chief to prove himself before sizing up." }
+      },
+      "conflict": { "bull": "buffett", "bear": "lilu", "line": "Buffett calls a 9x multiple on a 30%-ROIC brand a gift; Li Lu answers with Under Armour's ghost — brands do fall off altars, usually right after the founder-era management leaves." },
+      "debate": [
+        { "speaker": "buffett", "text": "Nine times earnings for a brand whose customers come back ninety percent of the time. The price already assumes decline." },
+        { "speaker": "lilu", "text": "Invert with me: how does this lose big? The brand loses the young — the Under Armour path. Probability isn't zero, and the CEO seat is changing hands at the worst moment." },
+        { "speaker": "munger", "text": "The competition is real this time. Alo and Vuori aren't Under Armour clones; they're winning the exact demographic Lululemon needs next." },
+        { "speaker": "duan", "text": "Ninety percent repurchase is the number I trust most in this room. Buy in stages; let the new CEO earn the rest of the position." }
+      ],
+      "tieredAdvice": [
+        { "profile": "Aggressive", "action": "Staged buy starting now", "priceBand": "Accumulate at current levels", "logic": "77% drawdown on an intact repurchase base" },
+        { "profile": "Moderate", "action": "Half position, complete after new CEO's first two quarters", "priceBand": "Stagger entries", "logic": "Let the transition de-risk itself" },
+        { "profile": "Conservative", "action": "Watchlist until brand metrics stabilize", "priceBand": "—", "logic": "Young-cohort share is the tripwire to watch" }
+      ],
+      "inversion": [
+        "Brand loses the next generation to Alo/Vuori (the Under Armour path)",
+        "New CEO forces a strategy reset that stalls two years",
+        "Tariffs and North America slowdown compress margins together"
+      ],
+      "mirrorTest": "A premium brand priced like a broken one, with the repurchase data contradicting the stock chart. The bet is on brand durability through a CEO change — staged entry pays you to find out.",
+      "sourceReport": "reports/lululemon/最终报告.md"
+    }
+  ]
+}
