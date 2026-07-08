@@ -112,6 +112,28 @@ def check_marketplace():
             fail(f"marketplace 插件 {name} 的 source 下缺少 .claude-plugin/plugin.json")
 
 
+def check_memory_wiring():
+    """校验 Phase 2 记忆闭环：memory/decisions 规范存在，且关键 skill 已接入。"""
+    global checks
+
+    checks += 1
+    readme = os.path.join(ROOT, "memory", "decisions", "README.md")
+    if not os.path.exists(readme):
+        fail("缺少 memory/decisions/README.md（决策记忆规范）")
+
+    wired_skills = ["investment-team.md", "thesis-tracker.md"]
+    for fn in wired_skills:
+        checks += 1
+        p = os.path.join(ROOT, "skills", fn)
+        if not os.path.exists(p):
+            fail(f"缺少 skills/{fn}")
+            continue
+        with open(p, encoding="utf-8") as f:
+            content = f.read()
+        if "memory/decisions" not in content:
+            fail(f"skills/{fn} 未接入 memory/decisions（决策记忆闭环断裂）")
+
+
 def main():
     print("=" * 60)
     print("AI Berkshire 插件清单校验 (check.py)")
@@ -119,6 +141,7 @@ def main():
 
     check_plugin()
     check_marketplace()
+    check_memory_wiring()
 
     print(f"  执行检查项: {checks}")
     for w in warnings:
