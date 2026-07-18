@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "yahoo-finance": {
+      "command": "npx",
+      "args": ["-y", "yahoo-finance-mcp-server"]
+    },
+    "sec-edgar": {
+      "command": "npx",
+      "args": ["-y", "edgar-mcp"]
+    },
+    "fred": {
+      "command": "npx",
+      "args": ["-y", "fred-economic-mcp"],
+      "env": {
+        "FRED_API_KEY": "${FRED_API_KEY}"
+      }
+    }
+  }
+}

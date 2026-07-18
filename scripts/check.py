@@ -134,6 +134,31 @@ def check_memory_wiring():
             fail(f"skills/{fn} 未接入 memory/decisions（决策记忆闭环断裂）")
 
 
+def check_mcp():
+    """校验 Phase 3 数据层：.mcp.json 合法，且 financial-data.md 已接入 MCP 优先规则。"""
+    global checks
+
+    mcp = load_json(os.path.join(ROOT, ".mcp.json"))
+    if mcp is not None:
+        checks += 1
+        servers = mcp.get("mcpServers", {})
+        if not servers:
+            fail(".mcp.json 缺少 mcpServers 或为空")
+        for name, cfg in servers.items():
+            checks += 1
+            if not cfg.get("command") and not cfg.get("url"):
+                fail(f".mcp.json 服务器 {name} 缺少 command/url")
+
+    checks += 1
+    fd = os.path.join(ROOT, "skills", "financial-data.md")
+    if os.path.exists(fd):
+        with open(fd, encoding="utf-8") as f:
+            if "MCP" not in f.read():
+                fail("skills/financial-data.md 未接入 MCP 优先规则（数据层断裂）")
+    else:
+        fail("缺少 skills/financial-data.md")
+
+
 def main():
     print("=" * 60)
     print("AI Berkshire 插件清单校验 (check.py)")
@@ -142,6 +167,7 @@ def main():
     check_plugin()
     check_marketplace()
     check_memory_wiring()
+    check_mcp()
 
     print(f"  执行检查项: {checks}")
     for w in warnings:
