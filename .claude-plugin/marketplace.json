@@ -1,0 +1,14 @@
+{
+  "name": "value-council",
+  "owner": {
+    "name": "shualoalumin",
+    "url": "https://github.com/shualoalumin"
+  },
+  "plugins": [
+    {
+      "name": "value-council",
+      "source": "./",
+      "description": "Four-analyst value investing council: parallel analysis through Buffett, Munger, Graham, and Lynch lenses, followed by structured cross-examination. Ten skills covering screening, deep research, earnings, thesis tracking, and portfolio review."
+    }
+  ]
+}

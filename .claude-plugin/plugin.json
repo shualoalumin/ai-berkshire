@@ -1,0 +1,32 @@
+{
+  "name": "value-council",
+  "displayName": "Value Council",
+  "description": "A four-analyst council for value investing research. Buffett, Munger, Graham, and Lynch lenses analyze a business in parallel, then cross-examine each other — disagreements are preserved, not averaged away.",
+  "author": {
+    "name": "shualoalumin"
+  },
+  "homepage": "https://github.com/shualoalumin/value-council",
+  "repository": "https://github.com/shualoalumin/value-council",
+  "license": "MIT",
+  "keywords": [
+    "value-investing",
+    "investment-research",
+    "equity-research",
+    "fundamental-analysis",
+    "stock-analysis",
+    "due-diligence",
+    "finance"
+  ],
+  "commands": [
+    "./skills/council.md",
+    "./skills/deep-dive.md",
+    "./skills/checklist.md",
+    "./skills/earnings.md",
+    "./skills/thesis.md",
+    "./skills/portfolio.md",
+    "./skills/screen.md",
+    "./skills/data-standards.md",
+    "./skills/pulse.md",
+    "./skills/management.md"
+  ]
+}

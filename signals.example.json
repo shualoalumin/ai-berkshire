@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2025-03-14",
+    "ticker": "ACME",
+    "action": "buy",
+    "price": 42.10,
+    "source": "council",
+    "note": "Illustrative only. Passed the gate; quality 4/5, margin of safety 3/5."
+  },
+  {
+    "date": "2025-06-02",
+    "ticker": "WIDG",
+    "action": "pass",
+    "price": 88.00,
+    "source": "checklist",
+    "note": "Illustrative only. Failed Gate 5 — refinancing need inside 18 months."
+  }
+]

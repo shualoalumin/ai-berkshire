@@ -1,0 +1,25 @@
+# Research output is personal — keep it local unless you deliberately publish it
+research/**
+!research/.gitkeep
+memory/decisions/*.md
+!memory/decisions/README.md
+
+# Local price snapshots for the ledger
+prices*.json
+!prices.example.json
+
+# Environment
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
